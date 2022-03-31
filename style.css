@@ -22,7 +22,7 @@ h1 {
 h1 span {
   border: 8px solid #666666;
   border-radius: 8px;
-  background-image: url("https://i.imgur.com/Y6iWwSs.mp4");
+  background-image: url("giphy.mp4");
   padding: 12px;
 }
 
@@ -45,7 +45,7 @@ p {
 }
 
 #header {
-  background-image: url("https://i.imgur.com/Y6iWwSs.mp4");
+  background-image: url("giphy.mp4");
   background-size: cover;
 }
 
