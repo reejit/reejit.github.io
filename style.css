@@ -38,12 +38,12 @@ p {
 }
 
 .pon {
-  border: 9px solid yellow;
-  border-radius: 85%;
+  border: 8px solid yellow;
+  border-radius: 50%;
 }
 .pon2 {
-  border: 9px solid green;
-  border-radius: 95%;
+  border: 8px solid green;
+  border-radius: 50%;
 }
 
 .section {
