@@ -127,6 +127,9 @@ progress::-moz-progress-bar {
   color: #3fb6b2;
   background: #efefef;
 }
+progress::-webkit-progress-bar {
+  background: #efefef;
+}
 
 iframe,
 audio {
