@@ -39,11 +39,11 @@ p {
 
 .pon {
   border: 8px solid yellow;
-  border-radius: 30px;
+  border-radius: 70%;
 }
 .pon2 {
   border: 8px solid green;
-  border-radius: 30px;
+  border-radius: 70%;
 }
 
 .section {
