@@ -39,12 +39,17 @@ p {
 
 .pon {
   border: 8px solid yellow;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  display: inline-block;
+  height: 60px;
 }
   
+#images{
+    text-align:center;
+}
+
 }
 .pon2 {
   border: 8px solid green;
