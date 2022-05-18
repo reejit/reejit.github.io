@@ -95,6 +95,16 @@ text-align: center;
    
             </ul>
         </div>
+       <script>
+        var timeDisplay = document.getElementById("time");
+        function refreshTime() {
+          var dateString = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+          var formattedString = dateString.replace(", ", " - ");
+          timeDisplay.innerHTML = formattedString;
+        }
+
+       setInterval(refreshTime, 1000)
+        </script>
        <div class="section" id="games">
          <h1><span>Games I Play</span></h1>
          <p align="centre"><strong>Some games I play</strong></p>
@@ -149,9 +159,11 @@ text-align: center;
             </a>
         </div>
         <center>Made with ❤️ By <a href="https://github.com/reejit">
-            Reejit
           </a></center>
-   
+
+        <div class="section">
+        Reejit is currently living in <p id="time"></p>
+        </div>
         <script type="text/javascript">
             function search() {
                 window.open('https://www.google.com/search?output=search&q=' + document.getElementById("question").value)
