@@ -14,7 +14,7 @@ function random() {
     var rand = arr[Math.floor(Math.random() * arr.length)];
     rando.innerHTML = rand;
 }
-random()
+random();
 
 
 
