@@ -96,16 +96,6 @@ text-align: center;
    
             </ul>
         </div>
-       <script>
-        var timeDisplay = document.getElementById("time");
-        function refreshTime() {
-          var dateString = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
-          var formattedString = dateString.replace(", ", " - ");
-          timeDisplay.innerHTML = formattedString;
-        }
-
-       setInterval(refreshTime, 1000)
-        </script>
        <div class="section" id="games">
          <h1><span>Games I Play</span></h1>
          <p align="centre"><strong>Some games I play</strong></p>
