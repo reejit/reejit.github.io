@@ -19,15 +19,14 @@ random();
 var nowPlaying = document.getElementById("text");
 function magic(){
     var Httpreq = new XMLHttpRequest();
-    Httpreq.open("GET",'https://scraper2.onlineradiobox.com/jp.jpoppowerplaykawaii?l=0',false);
-    Httpreq.send(null);
+    Httpreq.open("GET",'https://scraper2.onlineradiobox.com/jp.jpoppowerplaykawaii',false);
+    Httpreq.send();
     var raw = Httpreq.responseText;
     var json_obj = JSON.parse(raw);
     var msg = json_obj.title
-    console.log(msg);
     nowPlaying.innerHTML = msg;
 }   
-setInterval(magic, 20000)
+setInterval(magic, 3000)
 
 function aud_play_pause() {
   var myAudio = document.getElementById("myTune");
