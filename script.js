@@ -26,7 +26,7 @@ function magic(){
     var msg = json_obj.title
     nowPlaying.innerHTML = msg;
 }   
-setInterval(magic, 3000)
+setInterval(magic, 15000)
 
 function aud_play_pause() {
   var myAudio = document.getElementById("myTune");
