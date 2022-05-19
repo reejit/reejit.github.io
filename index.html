@@ -30,6 +30,11 @@ background-color: gray;
 color: white;  
 text-align: center;
           }
+         .button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+          }
         </style>
     </head>
     <body>
@@ -105,11 +110,8 @@ text-align: center;
        </div>
        <div class="section" id="anime">
          <h1><span>Animes Watched</span></h1>
-               <p align="centre"><strong>Some Anime Watched by me</strong></p>
-            <a href="https://reejit.github.io/re1">
-              <img class="pon2" src="https://dotbadges.com/wp-content/uploads/2021/05/badgeview-1-362.webp" style="width:40%;height:40%;" alt=""/>
-           <div class="caption"><b>Click UP</b></div>
-           </a>
+               <p align="centre"><strong>Some Anime Watched by me</strong></p>           
+               <input type="button" onclick="location.href='https://reejit.github.io/re1';" value="My animes" />           
         
        </div>
         <div class="section" id="contacts">
@@ -152,7 +154,7 @@ text-align: center;
           </a></center>
 
         <div class="section">
-        Reejit is currently living in <br><p id="time"></p> and is currently at <p id="place" style="font-weight: bold;"></p>
+        Reejit is currently living in <br><p id="time"></p> and is currently <p id="place" style="font-weight: bold;"></p>
         </div>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript">
