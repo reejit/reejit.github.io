@@ -34,6 +34,13 @@ text-align: center;
     outline-style:solid;
     box-shadow: 0 0 0 4px #5a01a7;
           }
+          #player {
+           width: 100%;
+          }​
+          po {
+  background-color: black;
+  color: white;
+          }
         </style>
     </head>
     <body>
@@ -109,8 +116,8 @@ text-align: center;
        </div>
        <div class="section" id="anime">
        <h1><span>Currently Playing</span></h1>
-       <b><p id="text"></p></b>
-       <audio autoplay controls><source src="https://kathy.torontocast.com:3060/;?listening-from-radio-garden=1652934568" type="audio/mpeg">Your browser does not support the audio element.</audio>
+       <b><po><p id="text"></p></po></b>
+       <audio id="player" autoplay controls><source src="https://kathy.torontocast.com:3060/;?listening-from-radio-garden=1652934568" type="audio/mpeg">Your browser does not support the audio element.</audio>
        <br><br>
        </div>
        <div class="section" id="anime">
