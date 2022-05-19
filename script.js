@@ -16,5 +16,21 @@ function random() {
 }
 random();
 
+var nowPlaying = document.getElementById("text");
+function magic(){
+    var Httpreq = new XMLHttpRequest();
+    Httpreq.open("GET",'https://scraper2.onlineradiobox.com/jp.jpoppowerplaykawaii?l=0',false);
+    Httpreq.send(null);
+    var raw = Httpreq.responseText;
+    var json_obj = JSON.parse(raw);
+    var msg = json_obj.title
+    console.log(msg);
+    nowPlaying.innerHTML = msg;
+}   
+magic()
+
+
+
+
 
 
