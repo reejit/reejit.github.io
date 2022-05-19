@@ -27,7 +27,7 @@ function magic(){
     console.log(msg);
     nowPlaying.innerHTML = msg;
 }   
-magic()
+setInterval(magic, 30000)
 
 function aud_play_pause() {
   var myAudio = document.getElementById("myTune");
