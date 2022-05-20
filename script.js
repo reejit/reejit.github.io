@@ -17,8 +17,8 @@ function random() {
 random();
 
 var nowPlaying = document.getElementById("text");
+nowPlaying.innerHTML = "Updating (◍•ᴗ•◍)";
 function magic(){
-    nowPlaying.innerHTML = "Updating (◍•ᴗ•◍)";
     var Httpreq = new XMLHttpRequest();
     Httpreq.open("GET",'https://scraper2.onlineradiobox.com/jp.jpoppowerplaykawaii',false);
     Httpreq.send();
