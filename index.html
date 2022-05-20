@@ -18,9 +18,8 @@
         </div>
         <div class="quot">
           <h1><span>Quote of the day</span></h1>
-          <strong><p id="today">Loading...</p></strong>
+          <div id="qotd_t">Loading..</div>
           <br>
-          <p class="quote" id="todaya">Loading...</p>
         </div>
         <div class="section" id="res">
             <h1><span>My Works</span></h1>
@@ -135,10 +134,11 @@
         <center>Made with ❤️ By Reejit
           </a></center>
 
-        <div class="section">
+        <div class="contacts">
         Reejit is currently living in <br><p id="time"></p> and is currently <p id="place"></p>
         </div>
         <script type="text/javascript" src="script.js"></script>
+        <script async src="https://www.quotepub.com/qotd_t.js"></script>
         <script type="text/javascript">
             function search() {
                 window.open('https://www.google.com/search?output=search&q=' + document.getElementById("question").value)
