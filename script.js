@@ -37,6 +37,22 @@ function aud_play_pause() {
   }
 }
 
+var quoteToday = document.getElementById("today");
+var authorToday = document.getElementById("todaya");
+
+function quote(){
+    var Httpreq = new XMLHttpRequest();
+    Httpreq.open("GET",'https://zenquotes.io/api/today',false);
+    Httpreq.send();
+    var raw = Httpreq.responseText;
+    var json_obj = JSON.parse(raw);
+    var quote = json_obj.q;
+    var author = json_obj.a;
+    quoteToday.innerHTML = quote;
+    authorToday.innerHTML = author;
+}   
+
+quote();
 
 
 
