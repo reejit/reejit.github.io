@@ -37,12 +37,15 @@ function aud_play_pause() {
   }
 }
 
-const countEl = document.getElementById('count');
-function updateVisitCount() {
-	fetch('<script async src="https://api.countapi.xyz/hit/reejit.github.io/visits?amount=1')
-	.then(res => res.json())
-	.then(res => {
-		countEl.innerHTML = res.value;
-	})
+var visitCount = document.getElementById("count");
+function count(){
+    var Httpreq = new XMLHttpRequest();
+    Httpreq.open("GET",'https://api.countapi.xyz/hit/reejit.github.io/visits?amount=1',false);
+    Httpreq.send();
+    var raw = Httpreq.responseText;
+    var json_ob = JSON.parse(raw);
+    var count = json_ob.value
+    visitCount.innerHTML = count;
 }
-updateVisitCount();
+
+count();
