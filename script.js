@@ -50,17 +50,3 @@ function coun(){
 
 coun();
 
-
-var quoteToday = document.getElementById("qotd_t");
-var authorToday = document.getElementById("qotd_a");
-function quot(){
-    var Httpreq = new XMLHttpRequest();
-    Httpreq.open("GET",'https://api.countapi.xyz/hit/reejit.github.io/visits?amount=1',false);
-    Httpreq.send( null );
-    var raw = Httpreq.responseText;
-    var json_obj = JSON.parse(raw);
-    quoteToday.innerHTML = json_obj.quote_body;
-    authorToday.innerHTML = json_obj.quote_author;
-}
-
-quot();
