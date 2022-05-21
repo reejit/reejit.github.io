@@ -37,14 +37,12 @@ function aud_play_pause() {
   }
 }
 
-var counterContainer = document.querySelector(".website-counter");
-var visitCount = localStorage.getItem("page_view");
-
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
+const countEl = document.getElementById('count');
+function updateVisitCount() {
+	fetch('<script async src="https://api.countapi.xyz/hit/reejit.github.io/visits?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
 }
-counterContainer.innerHTML = visitCount;);
+updateVisitCount();
