@@ -37,24 +37,14 @@ function aud_play_pause() {
   }
 }
 
-var quoteToday = document.getElementById("today");
-var authorToday = document.getElementById("todaya");
+var counterContainer = document.querySelector(".website-counter");
+var visitCount = localStorage.getItem("page_view");
 
-function quote(){
-    var Httpreq = new XMLHttpRequest();
-    Httpreq.open("GET",'https://zenquotes.io/api/today',false);
-    Httpreq.send();
-    var raw = Httpreq.responseText;
-    var json_obj = JSON.parse(raw);
-    var quote = json_obj.q;
-    var author = json_obj.a;
-    quoteToday.innerHTML = quote;
-    authorToday.innerHTML = author;
-}   
-
-quote();
-
-
-
-
-
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;);
