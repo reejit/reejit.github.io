@@ -20,7 +20,7 @@ var nowPlaying = document.getElementById("text");
 function magic(){
     var Httpreq = new XMLHttpRequest();
     Httpreq.open("GET",'https://scraper2.onlineradiobox.com/jp.jpoppowerplaykawaii',false);
-    Httpreq.send();
+    Httpreq.send( null );
     var raw = Httpreq.responseText;
     var json_obj = JSON.parse(raw);
     var msg = json_obj.title
@@ -38,14 +38,14 @@ function aud_play_pause() {
 }
 
 var visitCount = document.getElementById("count");
-function count(){
+function coun(){
     var Httpreq = new XMLHttpRequest();
     Httpreq.open("GET",'https://api.countapi.xyz/hit/reejit.github.io/visits?amount=1',false);
-    Httpreq.send();
+    Httpreq.send( null );
     var raw = Httpreq.responseText;
-    var json_ob = JSON.parse(raw);
-    var count = json_ob.value
+    var json_obj = JSON.parse(raw);
+    var count = json_obj.value
     visitCount.innerHTML = count;
 }
 
-count();
+coun();
