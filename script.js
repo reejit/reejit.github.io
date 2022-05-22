@@ -50,3 +50,27 @@ function coun(){
 
 coun();
 
+
+var quot = document.getElementById("quott")
+var auth = document.getElementById("auth");
+var anim = document.getElementById("anim");
+
+function quott(){
+    
+    var Httpreq = new XMLHttpRequest();
+    Httpreq.open("GET",'https://animechan.vercel.app/api/random',false);
+    Httpreq.send( null );
+    var raw = Httpreq.responseText;
+    var json_obj = JSON.parse(raw);
+    var quote = json_obj.quote;
+    var author = json_obj.character;
+    var animeo = json_obj.anime;
+
+    anim.innerHTML = animeo;
+    quot.innerHTML = quote;
+    auth.innerHTML = author;
+}
+
+quott();
+
+
