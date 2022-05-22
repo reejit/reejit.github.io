@@ -69,15 +69,10 @@ function quott(){
 
 quott();
 
-// requires jquery
+var loader = document.querySelector(".loader")
 
-jQuery(document).ready(function($) {  
-$(window).load(function(){
-	$('#preloader')
-        .fadeOut('slow',function(){
-        $(this).remove();
-        });
-});
-});
+window.addEventListener("load", vanish);
 
-
+function vanish() {
+  loader.classList.add("disppear");
+}
