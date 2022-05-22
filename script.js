@@ -75,7 +75,7 @@ jQuery(document).ready(function($) {
 $(window).load(function(){
 	$('#preloader')
         .fadeOut('slow',function(){
-        $(this).delay(2500).remove();
+        $(this).remove();
         });
 });
 });
