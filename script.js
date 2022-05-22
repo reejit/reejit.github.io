@@ -66,9 +66,8 @@ function quott(){
     var author = json_obj.character;
     var animeo = json_obj.anime;
 
-    anim.innerHTML = animeo;
     quot.innerHTML = quote;
-    auth.innerHTML = author;
+    auth.innerHTML = '~' + author + 'from' + animeo;
 }
 
 quott();
