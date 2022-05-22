@@ -53,10 +53,7 @@ coun();
 
 var quot = document.getElementById("quott")
 var auth = document.getElementById("auth");
-var anim = document.getElementById("anim");
-
 function quott(){
-    
     var Httpreq = new XMLHttpRequest();
     Httpreq.open("GET",'https://animechan.vercel.app/api/random',false);
     Httpreq.send( null );
@@ -67,7 +64,7 @@ function quott(){
     var animeo = json_obj.anime;
 
     quot.innerHTML = quote;
-    auth.innerHTML = '~ '+author+' from '+animeo;
+    auth.innerHTML = '~ '+ author +' from '+ animeo;
 }
 
 quott();
