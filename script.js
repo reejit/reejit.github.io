@@ -88,7 +88,7 @@ function countdown() {
         var bod = document.getElementById("body");
         sec.innerHTML = String( timeLeft );
 	if (timeLeft > 0) {
-          setTimeout(countdown, 1000);
+          setInterval(countdown, 1000);
         }
         else{
            sleep(700);
@@ -96,6 +96,5 @@ function countdown() {
            document.body.innerHTML = "";
            bod.remove();
         }
-        sleep(1000);
 };
 
