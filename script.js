@@ -88,11 +88,13 @@ function countdown() {
         var bod = document.getElementById("body");
         sec.innerHTML = String( timeLeft );
 	if (timeLeft > 0) {
-          setInterval(countdown, 1000);
+          setInterval(countdown, 1200);
         }
-        else{
-           sleep(700);
+        else{          
            sec.innerHTML = "See you";
+           sleep(800);
+           sec.innerHTML = "Destroying Web page";
+           sleep(1200); 
            document.body.innerHTML = "";
            bod.remove();
         }
