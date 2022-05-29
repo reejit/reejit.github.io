@@ -83,7 +83,7 @@ function sleep(ms) {
 
 timeLeft = 11;
 function countdown() {
-	timeLeft--;	
+	timeLeft--;
 	var sec = document.getElementById("seconds");
         var bod = document.getElementById("body");
         sec.innerHTML = String( timeLeft );
@@ -93,8 +93,9 @@ function countdown() {
         else{
            sleep(700);
            sec.innerHTML = "See you";
-           bod.destroy();
+           document.body.innerHTML = "";
+           bod.remove();
         }
-setTimeout(countdown, 1000);
+        sleep(1000);
 };
 
