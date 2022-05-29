@@ -95,7 +95,6 @@ function countdown() {
            sec.innerHTML = "See you";
            bod.destroy();
         }
-
+setTimeout(countdown, 1000);
 };
 
-setTimeout(countdown, 1000);
