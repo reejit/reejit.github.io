@@ -76,3 +76,26 @@ window.addEventListener("load", vanish);
 function vanish() {
   loader.classList.add("disppear");
 }
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+timeLeft = 11;
+function countdown() {
+	timeLeft--;	
+	var sec = document.getElementById("seconds");
+        var bod = document.getElementById("body");
+        sec.innerHTML = String( timeLeft );
+	if (timeLeft > 0) {
+          setTimeout(countdown, 1000);
+        }
+        else{
+           sleep(700);
+           sec.innerHTML = "See you";
+           bod.destroy();
+        }
+
+};
+
+setTimeout(countdown, 1000);
