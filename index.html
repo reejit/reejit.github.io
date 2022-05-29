@@ -7,7 +7,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <script async src="https://www.quotepub.com/qotd_t.js"></script>
     </head>
-    <body>
+    <body id="body">
         <div class="loader">
         <img src="load-gif.gif" alt=""></div>
         <div id="header" class="section">
@@ -149,8 +149,9 @@
         <div class="section" id="res">
         <i>Reejit is currently living in <br><p id="time"></p> and is currently <p id="place"></p></i>       
         <br></div>
-       <div>My website was visited</div>
-    <h2 id="count" style="color: lightgreen;">0</h2><p>times.</p></div>
+        <div>My website was visited</div>
+        <h2 id="count" style="color: lightgreen;">0</h2><p>times.</p></div>
+        <button id="seconds" onclick="countdown()" >Destroy</button>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript">
             function search() {
