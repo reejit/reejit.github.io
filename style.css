@@ -23,7 +23,7 @@ html {
   100%{
     opacity: 0;
     visibility: hidden;
-}
+}}
 
 body {
   font-family: 'Muli', sans-serif;
