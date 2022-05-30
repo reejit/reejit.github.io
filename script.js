@@ -40,7 +40,7 @@ function aud_play_pause() {
 var visitCount = document.getElementById("count");
 function coun(){
     var Httpreq = new XMLHttpRequest();
-    Httpreq.open("GET",'https://api.countapi.xyz/hit/reejit.github.io/visits?amount=1',false);
+    Httpreq.open("GET",'https://api.countapi.xyz/hit/581f4dd8-20d4-43c6-b2e8-bac5cf8c23d3',false);
     Httpreq.send( null );
     var raw = Httpreq.responseText;
     var json_obj = JSON.parse(raw);
@@ -75,13 +75,13 @@ function countdown() {
 	timeLeft--;
 	var sec = document.getElementById("seconds");
         var snds = String( timeLeft );
-        var nw = snds + " second(s)";
+        var nw = "<h1><b>"+snds + " second(s)"+"</b></h1>";
         sec.innerHTML = nw;
 	if (timeLeft > 0) {
 		setTimeout(countdown, 1000);
 	}
         else{
-           sec.innerHTML = "DESTROYING";          
+           sec.innerHTML = "DESTROYING";         
            sec.innerHTML = "Destroying Web page";        
            document.body.innerHTML = "<h1><strong>Empty as space 🌌.</strong></h1>";
         }};
@@ -89,9 +89,7 @@ function countdown() {
 
 
 function vis(){
-
 document.getElementById("second").remove();
-
 }
 
 
