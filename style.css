@@ -306,4 +306,10 @@ text-align: center;
 }
 
 .button2 {font-size: 30px;}
+
+.seconds{
+   font-size: 30px;
+   color: white;
+   background-color: black;
+}
          
