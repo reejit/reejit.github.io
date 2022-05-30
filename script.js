@@ -81,28 +81,46 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-timeLeft = 11;
-
+timeLeft=11;
 function countdown() {
+
 	timeLeft--;
+
 	var sec = document.getElementById("seconds");
+
         var snds = String( timeLeft );
+
         var nw = snds + " second(s)";
+
         sec.innerHTML = nw;
+
 	if (timeLeft > 0) {
+
 		setTimeout(countdown, 1000);
+
 	}
+
         else{
+
            sec.innerHTML = "DESTROYING";
+
            sleep(1000);
+
            sec.innerHTML = "Destroying Web page";
+
            sleep(1200); 
+
            document.body.innerHTML = "";
-           bod = document.getElementById("body");
-           bod.remove();
+
+
         }};
-  
+
+
+
 function vis(){
+
 document.getElementById("second").remove();
+
 }
+
 
