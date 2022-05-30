@@ -50,6 +50,10 @@ function coun(){
 
 coun();
 
+function sleep(delay) {
+    var start = new Date().getTime();
+    while (new Date().getTime() < start + delay);
+}
 
 var quot = document.getElementById("quott")
 var auth = document.getElementById("auth");
@@ -69,6 +73,9 @@ function quott(){
 
 quott();
 
+function vibrate(milli) { 
+   navigator.vibrate(milli); 
+} 
 
 timeLeft=11;
 function countdown() {
@@ -81,8 +88,13 @@ function countdown() {
 		setTimeout(countdown, 1000);
 	}
         else{
-           sec.innerHTML = "DESTROYING";         
-           sec.innerHTML = "Destroying Web page";        
+           sleep(1000);
+           sec.innerHTML = "DESTROYING";
+           sleep(1000);    
+           vibrate(2000);
+           sec.innerHTML = "Destroying Web page"; 
+           sleep(1000);
+           vibrate(500);  
            document.body.innerHTML = "<h1><strong>Empty as space 🌌.</strong></h1>";
         }};
 
@@ -100,5 +112,9 @@ window.addEventListener("load", vanish);
 function vanish() {
   loader.classList.add("disppear");
 }
+
+  
+
+
 
 
