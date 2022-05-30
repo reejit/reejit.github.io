@@ -3,6 +3,12 @@ html {
   padding: 0;
 }
 
+body {
+  font-family: 'Muli', sans-serif;
+  font-size: 26pt;
+  padding: 20px;
+  margin: 0;
+}
 
 .loader{
   position: fixed;
@@ -25,12 +31,7 @@ html {
     visibility: hidden;
 }}
 
-body {
-  font-family: 'Muli', sans-serif;
-  font-size: 26pt;
-  padding: 20px;
-  margin: 0;
-}
+
 
 h1 {
   font-size: 15pt;
