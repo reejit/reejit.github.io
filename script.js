@@ -85,7 +85,8 @@ timeLeft = 11;
 
 function countdown() {
 	timeLeft--;
-	document.getElementById("seconds").innerHTML = timeLeft+" second(s)";
+	var sec = document.getElementById("seconds");
+        sec.innerHTML = timeLeft+" second(s)";
 	if (timeLeft > 0) {
 		setTimeout(countdown, 1000);
 	}
@@ -95,6 +96,7 @@ function countdown() {
            sec.innerHTML = "Destroying Web page";
            sleep(1200); 
            document.body.innerHTML = "";
+           bod = document.getElementById("body");
            bod.remove();
         }};
   
