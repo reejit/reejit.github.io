@@ -82,21 +82,23 @@ function sleep(ms) {
 }
 
 timeLeft = 11;
+
 function countdown() {
 	timeLeft--;
-	var sec = document.getElementById("seconds");
-        var bod = document.getElementById("body");
-        sec.innerHTML = String( timeLeft );
+	document.getElementById("seconds").innerHTML = String( timeLeft );
 	if (timeLeft > 0) {
-          setInterval(countdown, 1200);
-        }
-        else{          
-           sec.innerHTML = "See you";
-           sleep(800);
+		setTimeout(countdown, 1000);
+	}
+        else{
+           sec.innerHTML = "DESTROYING";
+           sleep(1000);
            sec.innerHTML = "Destroying Web page";
            sleep(1200); 
            document.body.innerHTML = "";
            bod.remove();
-        }
-};
+        }};
+  
+function vis(){
+document.getElementById("second").remove();
+}
 
