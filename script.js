@@ -86,7 +86,9 @@ timeLeft = 11;
 function countdown() {
 	timeLeft--;
 	var sec = document.getElementById("seconds");
-        sec.innerHTML = timeLeft+" second(s)";
+        var snds = String( timeLeft );
+        var nw = snds + " second(s)";
+        sec.innerHTML = nw;
 	if (timeLeft > 0) {
 		setTimeout(countdown, 1000);
 	}
