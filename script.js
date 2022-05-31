@@ -88,14 +88,13 @@ function countdown() {
 		setTimeout(countdown, 1000);
 	}
         else{
-           sleep(1000);
            sec.innerHTML = "DESTROYING";
            sleep(1000);    
            vibrate(2000);
            sec.innerHTML = "Destroying Web page"; 
            sleep(1000);
            vibrate(500);  
-           document.body.innerHTML = "<h1><strong>Empty as space 🌌.</strong></h1>";
+           document.body.innerHTML = "<h1>Empty as space 🌌.</h1>";
         }};
 
 
