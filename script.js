@@ -154,7 +154,7 @@ function validateCaptcha() {
   event.preventDefault();
   debugger
   if (document.getElementById("cpatchaTextBox").value == code) {
-    alert("Valid Captcha")
+    $("body").load("/indexr.html");
   }else{
     alert("Invalid Captcha. try Again");
     createCaptcha();
