@@ -1,12 +1,15 @@
-<body onload="createCaptcha()"><center>
-  <form onsubmit="validateCaptcha()">
-    <div id="captcha">
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-5">
+          <div class="slidercaptcha card">
+                    <div class="card-header">
+                        <span>Please complete security verification!</span>
+                    </div>
+                    <div class="card-body">
+                        <div id="captcha"></div></div>
+                    </div>
+                </div>
+           
+        </div>
     </div>
-    <input type="text" placeholder="Captcha" id="cpatchaTextBox"/>
-    <button type="submit">Submit</button>
-  </form>
-</center>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<style>body {background-image: url('https://picsum.photos/1080/1920');}</style>
-<script src="script.js"></script>
-</body>
+</div>
