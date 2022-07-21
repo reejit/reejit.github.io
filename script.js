@@ -111,7 +111,7 @@ window.addEventListener("load", vanish);
 function vanish() {
   loader.classList.add("disppear");
 }
-
+  var canv = document.createElement("canvas");
   canv.id = "captcha";
   canv.width = 100;
   canv.height = 50;
