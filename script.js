@@ -44,23 +44,6 @@ function sleep(delay) {
     while (new Date().getTime() < start + delay);
 }
 
-var quot = document.getElementById("quott")
-var auth = document.getElementById("auth");
-function quott(){
-    var Httpreq = new XMLHttpRequest();
-    Httpreq.open("GET",'https://animechan.vercel.app/api/random',false);
-    Httpreq.send( null );
-    var raw = Httpreq.responseText;
-    var json_obj = JSON.parse(raw);
-    var quote = json_obj.quote;
-    var author = json_obj.character;
-    var animeo = json_obj.anime;
-    var frm = '~ '+author+' from '+animeo;
-    quot.innerHTML = quote;
-    auth.innerHTML = frm;
-}
-
-quott();
 
 function vibrate(milli) { 
    navigator.vibrate(milli); 
