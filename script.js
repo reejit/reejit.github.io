@@ -37,18 +37,7 @@ function aud_play_pause() {
   }
 }
 
-var visitCount = document.getElementById("count");
-function coun(){
-    var Httpreq = new XMLHttpRequest();
-    Httpreq.open("GET",'https://api.countapi.xyz/hit/581f4dd8-20d4-43c6-b2e8-bac5cf8c23d3',false);
-    Httpreq.send( null );
-    var raw = Httpreq.responseText;
-    var json_obj = JSON.parse(raw);
-    var count = json_obj.value
-    visitCount.innerHTML = count;
-}
 
-coun();
 
 function sleep(delay) {
     var start = new Date().getTime();
