@@ -83,7 +83,7 @@ function countdown() {
            sec.innerHTML = "Destroying Web page"; 
            sleep(1000);
            vibrate(500);  
-           document.body.innerHTML = "<h1>Empty as space.</h1>";
+           document.body.innerHTML = "<h1>Empty as space</h1>";
         }};
 
 
