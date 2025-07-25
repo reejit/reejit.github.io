@@ -1,197 +1,98 @@
+<!-- made by @alcoolique & edited by @decal. -->
+<!-- snow.js @ https://codepen.io/massiebn/pen/OJMbXz -->
+<!-- built onto https://wya.lol/$ by @decal. -->
+<!-- changes: added new view counter, fixed and added new container for badges, snow effect, real time discord profile tracker, new svg icons with rewritten css, typewriter effect on bio, fixed css errors + added sound off button to main container-->
+<!-- dm @decal. on discord for src if interested. all template credits to @alcoolique taken from wya.lol -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Welcome to My Portfolio!</title>
-        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwb4ETmL1qDz6RexpqBFKoxjaCe1016xu2AwClOxl9_uI07TdX5NhylyM&s=10" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <script async src="https://www.quotepub.com/qotd_t.js"></script>
-    </head>
-    
-        <div class="loader">
-        <img src="load-gif.gif" alt=""></div>
-        <div id="header" class="section">
-            <img alt="logo" class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxLGGYHBVYINOS0mTcjkxxgpYxAkMpMLj4B5gI8nq4yRErieR3D-jXOjk&s=10">
-            <p>Reejit Biswas</p>
-        </div>
-        <div class="section" id="res"><div class="section">
-            <h1><span>About Me</span></h1>
-            <p> Hey! I'm <strong>Reejit Biswas</strong> from <strong>Jharkhand, India.</strong>. Currently studying in <strong>class IX</strong>. I Like <strong>Coding</strong> Python And PHP Is Love❤️❤️. Learning java too. 😉</p>
-            <p class="quote">~ Reejit Biswas</p>
-        </div>
-        <div class="quot">
-          <h1><span>Quote of the day</span></h1>
-          <div id="qotd_t">Loading..</div>
-                    
-          <br>
-        </div>
-  
-        <div class="section" id="res">
-            <h1><span>My Works</span></h1>
-            <p align="centre"><strong>Here Are Some Of My Works</strong></p>
-            <a href="https://instagram.com/whyknotmemes">
-                <img src="https://i.ibb.co/FgqDMxH/download.jpg"/>
-                <div class="caption">Instagram Bot</div>
-            </a>
-            <a href="https://github.com/reejit">
-                <img src="https://img.icons8.com/nolan/144/github.png"/>
-                <div class="caption">Github Account</div>
-            </a>
-            <br>
-            <p align="centre"><strong>Resources I Use</strong></p>
-            <a href="https://github.com/">
-                <img src="https://img.icons8.com/nolan/144/github.png"/>
-                <div class="caption">Github</div>
-            </a>
-            <a href="https://telegram.me">
-                <img src="https://img.icons8.com/nolan/144/telegram-app.png"/>
-                <div class="caption">Telegram</div>
-            </a>
-            <a href="https://code.visualstudio.com">
-                <img src="https://img.icons8.com/nolan/144/code.png"/>
-                <div class="caption">VS Code Editor</div>
-            </a>
-            <a href="https://python.org">
-                <img src="https://img.icons8.com/nolan/144/python.png"/>
-                <div class="caption">Python</div>
-            </a>
-            <a href="https://www.php.net/">
-                <img src="https://img.icons8.com/dusk/144/000000/php-logo.png"/>
-                <div class="caption">PHP</div>
-            </a>
-            <a href="https://www.microsoft.com/en-in/windows/?r=1">
-                <img src="https://i.ibb.co/8bjFhTh/download.png"/>
-                <div class="caption">Windows</div>
-            </a>
-         
-            <a href="https://java.com/en/"><img src="https://i.ibb.co/NYzfnQZ/white-bg-no-shadow-designify.png"><div class="caption">Java</div>
-            </a></div>
-      <div class="section" id="res">
-            <h1><span>My Skills</span></h1>
-            <ul>
-                <li>Python<br /> <progress min="0" max="100" value="75"></progress> </li>
-                <li>PHP <br /> <progress min="0" max="100" value="45"></progress> </li>
-                <li>Java<br /> <progress min="0" max="100" value="15"></progress> </li>           
-                <li>Gaming<br /> <progress min="0" max="100" value="67"></progress> </li>
-                <li>Watching Anime<br /> <progress min="0" max="100" value="94"></progress> </li>
+<html lang="en">
 
-    
-   
-            </ul>
-        </div>
-       <div class="section"><center>
-         <h1><span>Games I Play</span></h1>
-         <p align="centre"><strong>Some games I play</strong></p>
-         <a href="https://minecraft.net/en-us">
-                <img class="pon2" style="border: 8px solid #eaabf8;" src="https://c4.wallpaperflare.com/wallpaper/324/91/825/video-game-minecraft-wallpaper-preview.jpg"/>
-                <div class="caption"><b>Minecraft</b></div>
-         </a>
-       </center></div>
-       
-         <h1><span>Animes Watched</span></h1>
-               <p align="centre"><strong>Some Anime Watched by me</strong></p>           
-               <input type="button button2" style="font-size: 40px;" onclick="location.href='https://reejit.github.io/re1';" value="My animes" />  
-        
-       </div>
-        <div class="section" id="follow">
-            <h1><span>Follow Me</span></h1>
-            <div>
-                <a href="https://instagram.com/_notreejit_" target="_blank">
-                <img alt="Instagram" src="https://img.icons8.com/cute-clipart/100/instagram-new.png"/>
-                </a>
-                <a href="https://telegram.me/Sakuraka">
-                <img alt="Telegram" src="https://img.icons8.com/nolan/144/telegram-app.png" />
-                </a>
-                <a href="https://github.com/reejit">
-                <img alt="GitHub" src="https://img.icons8.com/nolan/144/github.png"/>
-                </a>
-                <a href="mailto: guardiansofspartax@gmail.com">
-                <img alt="Email" src="https://img.icons8.com/fluent/96/000000/gmail.png"/>
-                </a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>reejit.github.io</title>
+    <meta name="theme-color" content="#000001">
+    <link rel="stylesheet" href="public/users/css/cat.css">
+    <link rel="icon" href="public\src\img\1281904753252765717.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public\src\img\1281904753252765717.png" type="image/x-icon"> 
+    <meta content="Thinking...." property="og:title" />
+    <meta content="https://reejit.github.io" property="og:url" />
+    <meta content="https://i.imgur.com/y6XhCX6.jpeg" property="og:image" />
+    <meta content="#000001" data-react-helmet="true" name="theme-color" />
+</head>
+<script src="snow.js"></script>
+<script src="effects.js"></script>
+<script src="effects2.js"></script>
+<script src="view.js"></script>
+<body>
+
+    <div id="overlay">
+        <button class="overlaybtn" onclick="removeOverlay()">
+𝔖𝔱𝔞𝔩𝔨𝔢𝔯!?</button>
+    </div>
+
+    <div id="user-page">
+
+        <video class="background" src="./r2.wya.lol/banner.mp4" autoplay muted loop playsinline style="object-fit: cover;" draggable="false"></video>
+
+        <div class="main-container" id="mainDiv">
+
+          <script src="tilt.js"></script>
+            <div class="profile-container">
+                <img class="pp" src="./r2.wya.lol/pp.png" draggable="false">
+                <p class="username breathing" data-tooltip="Insaan hu yawr!">Reejit</p>
+
+                <div class="badges-container">
+                    <!-- <div class="badges pic-badge" id="prem" data-tooltip="premium user" style="background-image: url('public/src/badges/premium.png');"></div> -->
+                    <div class="badges pic-badge" id="own" data-tooltip="site owner" style="background-image: url('public/src/badges/booster.png');" bis_skin_checked="1"></div> 
+                    <!-- <div class="badges pic-badge" id="early "data-tooltip="early user" style="background-image: url('public/src/badges/early.png');"></div> -->
+                </div>
+
+                <div class="bio-container">
+                    <div class="bio typewriter"></div>
+                </div>
+                <div class="pre-container">
+                    <div class="pre">
+                        <div class="cropped">
+                            <img draggable="false" id="rpc">
+                        </div>
+                    </div>
+                </div>
+                <div class="links-container" id="linksDiv">
+                    <div class="logo btc" id="btc" onclick="copyAddress('btc')">                
+<svg viewBox="0 0 24 24" title="_.notrebi._" id="btcInput" class="links" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z" fill="#5865f2"></path> </g></svg></div>
+                    <div class="logo spotify" id="tt" onclick="window.open('https://open.spotify.com/user/31pcbp27tnv56dytme4n5mhho6km', '_blank');" bis_skin_checked="1">
+    <svg fill="#1DB954" class="links" viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
+        <path d="M84,0C37.7,0,0,37.7,0,84s37.7,84,84,84s84-37.7,84-84S130.3,0,84,0z M122.9,121.2c-1.5,2.4-4.7,3.1-7.1,1.6
+            c-19.5-11.9-44.1-14.6-73.1-8c-2.7,0.6-5.4-1.1-6-3.8c-0.6-2.7,1.1-5.4,3.8-6c32.2-7.1,60.1-4,82.1,9.3
+            C123.7,115.5,124.4,118.7,122.9,121.2z M134.6,97.6c-1.9,3-5.9,4-8.9,2.1c-22.4-13.7-56.6-17.7-83.1-9.7c-3.3,1-6.8-0.8-7.8-4.1
+            c-1-3.3,0.8-6.8,4.1-7.8c31.9-9.3,70.1-5,96.4,11.1C135.5,90.5,136.5,94.6,134.6,97.6z M135.9,74.2c-26.6-16.1-70.6-17.6-96-9.6
+            c-4,1.3-8.2-0.9-9.5-4.9c-1.3-4,0.9-8.2,4.9-9.5c29.9-9.4,79.2-7.7,110.1,11.3c3.6,2.2,4.8,6.9,2.6,10.5
+            C145.7,75.2,139.6,76.5,135.9,74.2z"/>
+    </svg>
+</div>
+                    <div class="logo telegram" id="tele" onclick="window.open('https://t.me/sakuraka', '_blank');" bis_skin_checked="1">
+                        <svg fill="#2aaaee" version="1.1" id="tele" class="links" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;} </style> <path d="M19.2,4.4L2.9,10.7c-1.1,0.4-1.1,1.1-0.2,1.3l4.1,1.3l1.6,4.8c0.2,0.5,0.1,0.7,0.6,0.7c0.4,0,0.6-0.2,0.8-0.4 c0.1-0.1,1-1,2-2l4.2,3.1c0.8,0.4,1.3,0.2,1.5-0.7l2.8-13.1C20.6,4.6,19.9,4,19.2,4.4z M17.1,7.4l-7.8,7.1L9,17.8L7.4,13l9.2-5.8 C17,6.9,17.4,7.1,17.1,7.4z"></path> <rect y="0" class="st0" width="24" height="24"></rect> </g></svg>
+                    </div>
+                </div>
+
+                <div class="linksline"></div>
+
+                <div class="views-container">
+                    <svg viewBox="0 0 24 24" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0" style="margin-bottom: -3px;"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 14C3 9.02944 7.02944 5 12 5C16.9706 5 21 9.02944 21 14M17 14C17 16.7614 14.7614 19 12 19C9.23858 19 7 16.7614 7 14C7 11.2386 9.23858 9 12 9C14.7614 9 17 11.2386 17 14Z" stroke="#c18be0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <span id="view-count">236</span>
+                </div>
             </div>
-        </div>
-        <div class="section" id="images">
-          <h1><span>Images I love!</span></h1>
 
-          <center>
-          <img class="lol" src="https://source.unsplash.com/random" style="width:70%;height:70%;" alt=""/>     
-          <img class="loll" src="https://picsum.photos/1080/1920" style="width:60%;height:60%;" alt=""/>
-          <img class="lolll" src="https://picsum.photos/1080/1920?random=1&&pkg=kkg" style="width:60%;height:60%;" alt=""/>
-          </center></div>
-         <div class="section" id="quote">
-           <center>	<style>
-		#customize-list{
-			float:left;
-			margin-left:20px;
-			list-style:none;
-		}
-	  #gr_updates_widget{
-		float:left;
-		border-radius: 5px;
-		background-color:#fff;
-		border:solid #683205 10px;
-		-webkit-box-shadow: 0px 0px 4px 1px #595959,
-		inset 0px 0px 0px 1px #7D730B;
-		-moz-box-shadow: 0px 0px 4px 1px #595959,
-		inset 0px 0px 0px 1px #7D730B;
-		box-shadow: 0px 0px 4px 1px #595959,
-		inset 0px 0px 0px 1px #7D730B;
-		padding:15px 0 0px 15px;
-		width:500px;
-		height:665px;
-	  }
-	  #gr_footer{
-		margin-bottom:0px;
-		height:30px;
-	  }
-	  #gr_updates_widget p{
-		padding:0px;
-		margin:0;
-		font-size:14px;
-	  }
-	  #gr_footer img{
-		width:100px;
-		float:left;
-	  }
-	</style>
-	<div id="gr_updates_widget">
-	  <iframe sandbox id="the_iframe" src="https://goodreads.com/widgets/user_update_widget?height=700&num_updates=10&user=156033734&width=500" width="498" height="630" frameborder="0"></iframe>
-          <div id="gr_footer">
-            <a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" /></a>
-          </div>
-        </div>
-</center>
-
-
-
-        </div>
-        <div class="section" id="res">
-        <h1><span>Contact Me</span></h1>
-        <a href="mailto: guardiansofspartax@gmail.com">
-            <img src="https://img.icons8.com/fluent/95/000000/gmail--v2.png"/>
-        </a>
-        <a href="https://telegram.me/Sakuraka">
-                <img alt="Telegram" src="https://img.icons8.com/nolan/144/telegram-app.png" />
-        </a>
+        <div class="mutebutton">
+            <p id="mutetext" onclick="toggleMusic()">on</p>
         </div>
 
-	
-        <div class="section" id="res">
-        Made with love By Reejit
-        <br></div>
-        <div class="section" id="res">
-        <i>Reejit is currently living in <br><p id="time"></p> and is currently <p id="place"></p></i>       
-        <br></div>
-        <button id="second" onclick="vis();countdown();">Destroy</button>
-        <p class="seconds" style="font-size: 30px;color: white; background-color: black;" id="seconds"></p></div>
-        <script type="text/javascript" src="script.js"></script>
-        <script type="text/javascript">
-            function search() {
-                window.open('https://www.google.com/search?output=search&q=' + document.getElementById("question").value)
-            }
-        </script>
-        <div class="footer">  
-<p>Copyright &copy; 2007-<script>document.write(new Date().getFullYear())</script> Reejit</p>
-        </div></div>
-    </body>
-                </html>
+    </div>
+
+    <audio id="backgroundsong" src="./r2.wya.lol/music.mp3" loop></audio>
+
+</body>
+
+</html>
+
