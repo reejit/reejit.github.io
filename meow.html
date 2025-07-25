@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sleek Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.js"></script>
+</head>
+<body>
+
+  <div id="player">
+    <img data-amplitude-song-info="cover_art_url" class="cover">
+    
+    <div class="track-details">
+      <div class="title" data-amplitude-song-info="name"></div>
+      <div class="artist" data-amplitude-song-info="artist"></div>
+    </div>
+
+    <div class="controls">
+      <span class="time" data-amplitude-current-time></span>
+      <input type="range" class="amplitude-song-slider">
+      <span class="time" data-amplitude-duration-time></span>
+      <button class="playpause" data-amplitude-play-pause>▶️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
